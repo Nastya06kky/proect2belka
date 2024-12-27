@@ -1,0 +1,14 @@
+@font-face {
+    font-family: "PaletteMosaic-Regular";
+    src: url("../fonts/PaletteMosaic-Regular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: bold;
+  }
+
+
+  @font-face {
+    font-family: "Paprika-Regular";
+    src: url("../fonts/Paprika-Regular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+  }

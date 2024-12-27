@@ -1,0 +1,556 @@
+* {
+    box-sizing: border-box;
+  }
+  body {
+  background-color: #F8EEE5;
+  width: 100%;
+  position: relative;
+   overflow-x: hidden;
+  
+}
+  
+  .header-text{
+  font-family: "PaletteMosaic-Regular";
+  font-size: 18vw;
+  color: #0a0a0a;
+  text-align: center;
+  }
+
+  .belkin{
+    position: relative;
+    font-family: "PaletteMosaic-Regular";
+    font-size: 5vw;
+    color: #F9EDE6;
+    z-index: 12;
+    margin-left: 35%;
+    top: 12%;
+    animation: bounce 2s infinite;
+  }
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
+}
+.coffeclub{
+    position: relative;
+    font-family: "PaletteMosaic-Regular";
+    font-size: 5vw;
+    color: #F9EDE6;
+    z-index: 12;
+    margin-left: 30%;
+    top: 13.9%;
+    
+  }
+  
+  .dubpictur {
+    position: absolute;
+    width: 100%;
+    top: -9%;
+    z-index: 1;
+  }
+  .scarfpicture{
+    position: absolute;
+    width: 100%;
+    top: 48.9%;
+    z-index: 2;
+    
+  }
+
+  .dooricture{
+    position: absolute;
+    width: 44%;
+    right:33%; 
+    z-index: 2;
+  }
+  
+  .belkapicture{
+    position: absolute;
+    width: 26%;
+    right:65%;
+    top: 34%;
+    z-index: 2;
+  }
+  .list1picture{
+   position: absolute;
+   width: 12%;
+   right: 33%;
+   top: 41%;
+   z-index: 2;
+   transform: rotate(41eg);
+   animation: shelest 5s ease-in-out infinite;}
+
+  @keyframes shelest {
+    0%{ rotate: 0deg; }
+    30%{ rotate: 30deg;}
+    30%{ rotate: -30deg;}
+    100%{ rotate: 0deg; }
+  }
+
+  .list2picture{
+    position: absolute;
+    width: 15%;
+    top: 25%;
+    margin-left: 12%;
+    z-index: 2;
+    animation: shelest 5s ease-in-out infinite;
+  }
+.listorange{
+  position: absolute;
+  width: 10%;
+  top: 41%;
+  margin-left: 88%;
+  animation: padenie 4s infinite ease-in-out;
+
+}
+@keyframes padenie {
+  0%{top: 0px; rotate: 0deg;}
+  50%{top: 40%; rotate: 60deg; border-radius: 20px;}
+  100%{top: 0px; rotate: 0deg; rotate: 20px;}
+}
+.list3picture{
+  position: absolute;
+  width: 15%;
+  top: 20%;
+  margin-left: 79%;
+  z-index: 2;
+  animation: shelest 7s ease-in-out infinite;
+}
+@keyframes shelest {
+  0%{ rotate: 0deg; }
+  30%{ rotate: -30deg;}
+  30%{ rotate: 30deg;}
+  100%{ rotate: 0deg; }
+}
+
+
+.belka2picture{
+  position: absolute;
+  width: 45%;
+  top: 21%;
+  right: 30%;
+  opacity: 1;
+}
+.findbelka1{
+  position: absolute;
+  width: 64%;
+  right: 16%;
+  top: 92%;
+}
+.orehpicture{
+  position: absolute;
+  width: 57%;
+  top: 13%;
+  right: 21%;
+}
+.orehpicture:hover{
+  opacity: 0;
+}
+
+.orehpicture:hover ~ .belka2picture img{
+  opacity: 1;
+} 
+
+.listpink1{
+  position: absolute;
+  width: 15%;
+  top: 79%; 
+  margin-left: 1%;
+  animation: gelatine 0.5s infinite;
+}
+@keyframes gelatine {
+  from, to { transform: scale(1, 1); }
+  25% { transform: scale(0.9, 1.1); }
+  50% { transform: scale(1.1, 0.9); }
+  75% { transform: scale(0.95, 1.05); } 
+} 
+.picture1{
+  position: absolute;
+width: 2.5%;
+left: 7.1%;
+top: 83%;
+z-index: 2;
+}
+.cook{
+  position: absolute;
+  width: 72%;
+  top: 3%;
+  right:13.2%;
+}
+.coffeevector1{
+  position: absolute;
+  width: 10%;
+  top: 3%;
+  right:13.2%;
+}
+.orehmashinap{
+  position: absolute;
+  width: 2.5%;
+  top: 21.1%;
+  left: 80.1%;
+  z-index: 2;
+  animation: wobble 1s ease infinite;
+}
+@keyframes wobble {
+  0% { transform: translateX(0%); }
+  15% { transform: translateX(-30%) rotate(-5deg); }
+  30% { transform: translateX(20%) rotate(3deg); }
+  45% { transform: translateX(-15%) rotate(-3deg); }
+  60% { transform: translateX(10%) rotate(2deg); }
+  75% { transform: translateX(-5%) rotate(-1deg); }
+  100% { transform: translateX(0%); }
+}
+.spidometr1{
+  position: absolute;
+  width: 7.8%;
+  top: 20.5%; 
+  left: 16.1%;
+  z-index: 2;
+  animation: spin 4s infinite linear;
+}
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+.mashinapicture{
+  position: absolute;
+  width: 80%;
+  top: 15%; 
+  right: 9%;
+} 
+.vectorpicture{
+  position: absolute;
+  width: 10%;
+  top: 34.5%; 
+  right: 8%;
+  animation: move-left-right 1s infinite alternate;
+}
+@keyframes move-left-right {
+  0% {
+      transform: translateX(0);
+  }
+  50% {
+      transform: translateX(-20px); /* Перемещение влево */
+  }
+  100% {
+      transform: translateX(20px); /* Перемещение вправо */
+  }
+}
+
+.redbutton1{
+  position: absolute;
+  width: 2.7vw;
+  height: 2.7vw;
+  margin-left: 26.6%;
+  background: #ea4c17;
+  border-radius: 50%;
+  margin-top: 29.8%;
+}
+.redbutton1:hover{
+  background: rgb(255, 255, 255);
+}
+.redbutton2{
+  position: absolute;
+  width: 2.7vw;
+  height: 2.7vw;
+  margin-left: 47.3%;
+  background: #ea4c17;
+  border-radius: 50%;
+  margin-top: 29.8%;
+}
+.redbutton2:hover{
+  background: rgb(255, 255, 255);
+}
+.redbutton3{
+  position: absolute;
+  width: 2.7vw;
+  height: 2.7vw;
+  margin-left: 68.1%;
+  background: #ea4c17;
+  border-radius: 50%;
+  margin-top: 29.8%;
+}
+.redbutton3:hover{
+  background: rgb(255, 255, 255);
+}
+.picture2{
+  position: absolute;
+  width: 3.3%;
+  left: 7.1%;
+  top: 88%;
+  z-index: 2;
+
+}
+.picture3{
+  position: absolute;
+  width: 3.4%;
+  left: 7.1%;
+  top: 76.7%;
+  z-index: 2;
+}
+.listpink2{
+  position: absolute;
+  width: 15%;
+  top:84%;
+  margin-left: 1%;
+  animation: gelatine 0.5s infinite;
+}
+@keyframes gelatine {
+  from, to { transform: scale(1, 1); }
+  25% { transform: scale(0.9, 1.1); }
+  50% { transform: scale(1.1, 0.9); }
+  75% { transform: scale(0.95, 1.05); }
+}
+.listpink3{
+  position: absolute;
+  width: 15%;
+   top: 72%;
+   margin-left: 1%;
+   animation: gelatine 0.5s infinite;
+}
+@keyframes gelatine {
+  from, to { transform: scale(1, 1); }
+  25% { transform: scale(0.9, 1.1); }
+  50% { transform: scale(1.1, 0.9); }
+  75% { transform: scale(0.95, 1.05); }
+}
+.unikcoffee{
+  position: absolute;
+  width: 65%;
+  top: 80%;
+  margin-left: 23%;
+}
+.coffeepicture{
+
+  position: absolute;
+  width: 40%;
+  top: 6%;
+  right: 44%;
+  transform-origin: top center;
+	animation: swing 5s ease infinite;
+}
+.korizatextp{
+  position: absolute;
+  width: 6%;
+  top: 18%;
+  right: 17.4%;
+}
+
+
+.puretextp{
+  position: absolute;
+  width: 10%;
+  top: 52.7%;
+  right: 25%;
+}
+@keyframes swing {
+	20% { transform: rotate(15deg); }	
+	40% { transform: rotate(-10deg); }
+	60% { transform: rotate(5deg); }	
+	80% { transform: rotate(-5deg); }	
+	100% { transform: rotate(0deg); }
+}
+.rukapicture{
+  position: absolute;
+  width: 49%;
+  top: 15%;
+  right: 62%;
+  transform: rotate(-1deg);
+  transform-origin: top center;
+	animation: swing 5s ease infinite;
+}
+@keyframes swing {
+	20% { transform: rotate(15deg); }	
+	40% { transform: rotate(-10deg); }
+	60% { transform: rotate(5deg); }	
+	80% { transform: rotate(-5deg); }	
+	100% { transform: rotate(0deg); }
+}
+
+.tikvapicture{
+  position: absolute;
+  width: 33%;
+  top: 30%;
+  right: 12%;
+  animation: hithere 3s ease infinite;
+}
+@keyframes hithere {
+  30% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+.korizapicture{
+  position: absolute;
+  width: 20%;
+  top: 1%;
+  right: 10%;
+  animation: hithere 3s ease infinite;
+}
+@keyframes hithere {
+  30% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+.listzelpicture{
+position: absolute;
+width: 17%;
+top: 1%;
+right: 83%;
+animation: pulse 3s infinite ease-in-out alternate;
+}
+@keyframes pulse {
+  from { transform: scale(0.8); }
+  to { transform: scale(1.2); }
+}
+.listzelpicture2{
+  position: absolute;
+width: 18%;
+top: 47%;
+right: 2%;
+animation: pulse 2s infinite ease-in-out alternate;
+}
+@keyframes pulse {
+  from { transform: scale(0.8); }
+  to { transform: scale(1.2); }
+}
+
+.listkariza1{
+  position: absolute;
+width: 7%;
+top: 12%;
+right: 7%;
+animation: pulse 2s infinite ease-in-out alternate;
+}
+@keyframes pulse {
+  from { transform: scale(0.8); }
+  to { transform: scale(1.2); }
+}
+.listcoffe1{
+  position: absolute;
+width: 14%;
+top: 35%;
+right: 55%;
+animation: hinge 6s ease infinite;
+}
+@keyframes hinge {
+  0% { transform: rotate(0); transform-origin: top left; animation-timing-function: ease-in-out; }  
+  20%, 60% { transform: rotate(80deg); transform-origin: top left; animation-timing-function: ease-in-out; }  
+  40% { transform: rotate(60deg); transform-origin: top left; animation-timing-function: ease-in-out; } 
+  80% { transform: rotate(60deg) translateY(0); opacity: 1; transform-origin: top left; animation-timing-function: ease-in-out; } 
+  100% { transform: translateY(700px); opacity: 0; }
+}
+
+
+.belkasmall1p {
+  position: absolute;
+  width: 9%;
+  top: 63%;
+  right: 62.8%;
+  z-index: 2;
+  animation: fade-in 0.9s linear infinite;
+  animation: bounce-out 2s ease infinite;
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes bounce-out {
+  0% { transform: scale(1); }
+  25% { transform: scale(.95); }
+  50% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(.3);
+  } 
+}
+.belkasmall2p{
+  position: absolute;
+  width: 9%;
+  top: 55.8%;
+  right: 41%;
+  animation: bounce2 2s ease infinite;
+}
+@keyframes bounce2 {
+	0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+	40% {transform: translateY(-30px);}
+	60% {transform: translateY(-15px);}
+}
+.menu{position: relative;
+  font-family: "PaletteMosaic-Regular";
+  font-size: 13vw;
+  color: #FFC14F;
+  z-index: 2;
+  margin-left: 30%;
+  top: 59%;
+}
+.beg1{
+  position: absolute;
+  width: 100%;
+  top: 76%;
+}
+.textbeg1{
+  position: absolute;
+  width: 96%;
+  top: 79%;
+  left: 1.7%;
+  z-index: 2;
+  animation: begtext 2s ease infinite;
+}
+@keyframes begtext {
+  0%{ left: -20% }
+  50%{ left: 20%;}
+  100%{ left: 0%;}
+}
+.listmenupicture{
+  position: absolute;
+  width: 12%;
+  top: 66%;
+  left: 23%;
+  animation: hinge 2s ease infinite;
+}
+@keyframes hinge {
+  0% { transform: rotate(0); transform-origin: top left; animation-timing-function: ease-in-out; }  
+  20%, 60% { transform: rotate(80deg); transform-origin: top left; animation-timing-function: ease-in-out; }  
+  40% { transform: rotate(60deg); transform-origin: top left; animation-timing-function: ease-in-out; } 
+  80% { transform: rotate(60deg) translateY(0); opacity: 1; transform-origin: top left; animation-timing-function: ease-in-out; } 
+  100% { transform: translateY(700px); opacity: 0; }
+}
+.hsepicture{
+  position: absolute;
+  width: 15%;
+  top: 93%;
+  left: 82%;
+}
+
+.str1{
+  width: 100%;
+  height: 115vw;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.str2{
+  width: 100%;
+  height: 110vw;
+  position: relative;
+  overflow-x: hidden;
+}
+.str3{
+  width: 100%;
+  height: 100vw;
+  position: relative;
+  overflow-x: hidden;
+}
+.str4{
+  width: 100%;
+  height: 145vw;
+  position: relative;
+  overflow-x: hidden;
+}
